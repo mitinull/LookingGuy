@@ -1,10 +1,10 @@
 [el1, el2] = document.querySelectorAll(".container");
 
-ox1 = 100;
-oy1 = 100;
+ox1 = 300;
+oy1 = 300;
 
-ox2 = 350;
-oy2 = 100;
+ox2 = 550;
+oy2 = 300;
 
 // console.log(el);
 
