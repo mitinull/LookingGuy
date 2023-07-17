@@ -1,15 +1,21 @@
 [el1, el2] = document.querySelectorAll(".container");
 
-ox1 = 300;
-oy1 = 300;
+face = document.querySelector(".face-container");
 
-ox2 = 550;
-oy2 = 300;
+faceWidth = face.clientWidth;
+
+ox1 = el1.offsetLeft + el1.clientWidth / 2;
+oy1 = el1.offsetTop + el1.clientHeight / 2;
+console.log(ox1, oy1);
+
+ox2 = el2.offsetLeft + el2.clientWidth / 2;
+oy2 = el2.offsetTop + el2.clientHeight / 2;
 
 // console.log(el);
 
 addEventListener("mousemove", (object) => {
-  // console.log(object.layerX, object.layerY);
+  // log object and see other props other than layerX and layerY to fix mouse enter eye problem
+  console.log(object.layerX, object.layerY);
   el1.style.rotate =
     Math.PI * (object.layerX - ox1 < 0) +
     Math.atan((object.layerY - oy1) / (object.layerX - ox1)) +
