@@ -14,15 +14,14 @@ oy2 = el2.offsetTop + el2.clientHeight / 2;
 // console.log(el);
 
 addEventListener("mousemove", (object) => {
-  // log object and see other props other than layerX and layerY to fix mouse enter eye problem
-  console.log(object.layerX, object.layerY);
+  // console.log(object);
   el1.style.rotate =
-    Math.PI * (object.layerX - ox1 < 0) +
-    Math.atan((object.layerY - oy1) / (object.layerX - ox1)) +
+    Math.PI * (object.pageX - ox1 < 0) +
+    Math.atan((object.pageY - oy1) / (object.pageX - ox1)) +
     "rad";
 
   el2.style.rotate =
-    Math.PI * (object.layerX - ox2 < 0) +
-    Math.atan((object.layerY - oy2) / (object.layerX - ox2)) +
+    Math.PI * (object.pageX - ox2 < 0) +
+    Math.atan((object.pageY - oy2) / (object.pageX - ox2)) +
     "rad";
 });
