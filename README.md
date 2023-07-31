@@ -3,7 +3,9 @@ A guy who looks to your mouse cursor. 🖱👀
 
 [Visit Website (looking-guy.netlify.app)](https://looking-guy.netlify.app/)
 
-<a href="https://looking-guy.netlify.app/"><img src="https://github.com/mitinull/LookingGuy/assets/80200060/ff400751-999d-4085-b738-ad84e2d361b8" /></a>
+<picture>
+  <img alt="LookingGuy1" src="https://github.com/mitinull/LookingGuy/assets/80200060/ff400751-999d-4085-b738-ad84e2d361b8" />
+</picture>
 
 [![LookingGuy2](https://github.com/mitinull/LookingGuy/assets/80200060/2382f3a3-770a-47a0-9f92-7b2f46000827)](https://looking-guy.netlify.app/)
 
