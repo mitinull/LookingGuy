@@ -1,58 +1,46 @@
-* {
+.LOOKING_GUY {
+  width: 100px;
+}
+
+.LOOKING_GUY * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.face-container {
-  margin-left: 200px;
-  width: 250px;
-}
-
-.face{
+.LOOKING_GUY__face {
   display: flex;
   flex-direction: column;
   background: yellowgreen;
-  padding: 20% 15% 15% 20%;
+  padding: 12% 8% 8% 12%;
   width: 100%;
-  border-radius: 45%;
-  border: 3px solid black;
+  border-radius: 35%;
+  border: 2px solid black;
+  transition: .2s;
 }
 
-.eyes{ 
-  width: 100%;
-  display: flex;
-  gap: 5%;
-}
-
-.nose{
+.LOOKING_GUY__mouth {
   flex-shrink: 0;
   width: 17%;
-  aspect-ratio: .7;
+  aspect-ratio: 0.7;
+  /* aspect-ratio: 8; */
   background: #000;
   margin-top: 5%;
   margin-left: 45%;
   border-radius: 50%;
 }
 
-.mouth{
-  flex-shrink: 0;
-  margin-top: 6%;
-  width: 70%;
-  height: 15%;
-  /* background: #000; */
-  border-bottom: #000 solid 25px;
-  margin-left: 33%;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 50%;
+.LOOKING_GUY__eyes {
+  width: 100%;
+  display: flex;
+  gap: 3.5%;
 }
 
-.container {
-  /* flex-shrink: 0; */
-  width: 47.5%;
+.LOOKING_GUY__outer-eye {
+  width: 100%;
   aspect-ratio: 1;
   background-color: white;
-  border: black 3px solid;
+  border: black 2px solid;
   border-radius: 50%;
   color: white;
   display: flex;
@@ -60,7 +48,7 @@
   justify-content: center;
 }
 
-.circle {
+.LOOKING_GUY__middle-eye {
   width: 40%;
   height: 40%;
   background-color: black;
@@ -72,7 +60,7 @@
   margin-left: 40%;
 }
 
-.inner {
+.LOOKING_GUY__inner-eye {
   width: 20%;
   height: 20%;
   background-color: white;
@@ -82,4 +70,45 @@
   align-items: center;
   justify-content: center;
   margin-left: 17%;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__eyes {
+  flex-direction: column;
+  gap: 50%;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye {
+  margin-bottom: 7%;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__mouth {
+  width: 35%;
+  margin-left: 35%;
+  margin-top: 20%;
+}
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__face {
+  border-radius: 42%; 
+  padding: 20%;
+}
+
+.LOOKING_GUY--NORMAL:hover .LOOKING_GUY__face {
+  padding: 0 0 5% 0;
+  border-radius: 45%;
+  filter: brightness(1.1);
+
+}
+
+.LOOKING_GUY--NORMAL:hover .LOOKING_GUY__mouth {
+  border-radius: 10%;
+}
+
+.LOOKING_GUY--VERTICAL:hover .LOOKING_GUY__mouth {
+  border-radius: 10%;
+}
+
+.LOOKING_GUY--VERTICAL:hover .LOOKING_GUY__face {
+  border-radius: 50%;
+  border-top-left-radius: 34%;
+  border-top-right-radius: 34%;
+  background: cyan;
 }

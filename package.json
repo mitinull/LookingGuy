@@ -1,8 +1,6 @@
 {
   "name": "looking-guy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A guy who looks to your pointer!",
-  "main": "index.html",
-  "keywords": [],
   "author": "Mitinull"
 }
