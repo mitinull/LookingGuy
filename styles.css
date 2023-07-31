@@ -28,6 +28,7 @@
   margin-top: 5%;
   margin-left: 45%;
   border-radius: 50%;
+  transition: .15s;
 }
 
 .LOOKING_GUY__eyes {
@@ -77,8 +78,10 @@
   gap: 50%;
 }
 
-.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye {
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye:first-child {
+  margin: 0px auto;
   margin-bottom: 7%;
+  width: 80%;
 }
 
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__mouth {
@@ -89,12 +92,15 @@
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__face {
   border-radius: 42%; 
   padding: 20%;
+  background: #7a7;
 }
 
 .LOOKING_GUY--NORMAL:hover .LOOKING_GUY__face {
   padding: 0 0 5% 0;
   border-radius: 45%;
-  filter: brightness(1.1);
+  /* filter: brightness(1.1); */
+  /* background: hsl(39, 100%, 65%); */
+  background: hsl(80, 75%, 58%);
 
 }
 
@@ -111,4 +117,5 @@
   border-top-left-radius: 34%;
   border-top-right-radius: 34%;
   background: cyan;
+  padding: 15% 19% 25% 19%;
 }
