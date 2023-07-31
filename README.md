@@ -1,7 +1,7 @@
 # LookingGuy
 A guy who looks to your mouse cursor. 🖱👀
 
-[Visit Website (looking-guy.netlify.app)](https://looking-guy.netlify.app/)
+🔗[Visit Website (looking-guy.netlify.app)](https://looking-guy.netlify.app/)
 
 <a href="https://looking-guy.netlify.app/">
   <picture>
