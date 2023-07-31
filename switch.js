@@ -8,12 +8,12 @@ switchButton.addEventListener("click", () => {
       "LOOKING_GUY--NORMAL",
       "LOOKING_GUY--VERTICAL"
     );
-    lookingGuy.style.width = "70px";
+    lookingGuy.style.width = "150px";
   } else {
     lookingGuy.classList.replace(
       "LOOKING_GUY--VERTICAL",
       "LOOKING_GUY--NORMAL"
     );
-    lookingGuy.style.width = "100px";
+    lookingGuy.style.width = "250px";
   }
 });
