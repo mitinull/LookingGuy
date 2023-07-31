@@ -1,0 +1,26 @@
+button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.github {
+  display: block;
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px black solid;
+  padding: 5px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 4px;
+}
+
+.github:hover {
+  background-color: cyan;
+}
