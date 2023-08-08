@@ -14,10 +14,20 @@
   background: yellowgreen;
   padding: 12% 8% 8% 12%;
   width: 100%;
-  aspect-ratio: 1.2;
   border-radius: 35%;
   border: 2px solid black;
-  transition: .2s;
+  transition: 0.2s;
+}
+
+.LOOKING_GUY--NORMAL .LOOKING_GUY__face {
+  aspect-ratio: 1.2;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__face {
+  border-radius: 42%;
+  padding: 20%;
+  background: #7a7;
+  aspect-ratio: 0.5;
 }
 
 .LOOKING_GUY__mouth {
@@ -29,7 +39,7 @@
   margin-top: 5%;
   margin-left: 45%;
   border-radius: 50%;
-  transition: .15s;
+  transition: 0.15s;
 }
 
 .LOOKING_GUY__eyes {
@@ -48,6 +58,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye {
+  flex-shrink: 0;
+}
+
+.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye:first-child {
+  margin: 0px auto;
+  margin-bottom: 7%;
+  width: 80%;
 }
 
 .LOOKING_GUY__middle-eye {
@@ -76,24 +96,13 @@
 
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__eyes {
   flex-direction: column;
-  gap: 50%;
-}
-
-.LOOKING_GUY--VERTICAL .LOOKING_GUY__outer-eye:first-child {
-  margin: 0px auto;
-  margin-bottom: 7%;
-  width: 80%;
+  /* gap: 50%; */
 }
 
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__mouth {
   width: 35%;
   margin-left: 35%;
   margin-top: 20%;
-}
-.LOOKING_GUY--VERTICAL .LOOKING_GUY__face {
-  border-radius: 42%; 
-  padding: 20%;
-  background: #7a7;
 }
 
 .LOOKING_GUY--NORMAL:hover .LOOKING_GUY__face {
@@ -102,7 +111,6 @@
   /* filter: brightness(1.1); */
   /* background: hsl(39, 100%, 65%); */
   background: hsl(80, 75%, 58%);
-
 }
 
 .LOOKING_GUY--NORMAL:hover .LOOKING_GUY__mouth {
