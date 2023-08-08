@@ -14,6 +14,7 @@
   background: yellowgreen;
   padding: 12% 8% 8% 12%;
   width: 100%;
+  aspect-ratio: 1.2;
   border-radius: 35%;
   border: 2px solid black;
   transition: .2s;
