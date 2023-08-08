@@ -96,7 +96,6 @@
 
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__eyes {
   flex-direction: column;
-  /* gap: 50%; */
 }
 
 .LOOKING_GUY--VERTICAL .LOOKING_GUY__mouth {
@@ -108,8 +107,6 @@
 .LOOKING_GUY--NORMAL:hover .LOOKING_GUY__face {
   padding: 0 0 5% 0;
   border-radius: 45%;
-  /* filter: brightness(1.1); */
-  /* background: hsl(39, 100%, 65%); */
   background: hsl(80, 75%, 58%);
 }
 
